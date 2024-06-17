@@ -1,0 +1,164 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+section{
+  color: rgb(227, 247, 194);
+  background-color: hsl(256, 87%, 15%);
+  height: 100vh;
+}
+.navBg{
+  background-color: hsl(258, 81%, 4%);
+
+}
+/*-----------------letra-----------------------------------*/
+.neon{
+  text-transform: uppercase;
+  font-size: 4rem;
+  cursor: pointer;
+  transition: .3s linear;
+  color: transparent;
+  -webkit-text-stroke: 2px red;
+  background-image: linear-gradient(to left,
+          red, rgb(226, 33, 33), black, rgb(35, 31, 31));
+  background-size: 200%;
+  -webkit-background-clip: text;
+  animation: move 30s linear infinite;
+}
+@keyframes move {
+  100% {
+      background-position: 200px 0;
+  }
+}
+.neon:hover {
+  color: red;
+  text-shadow: 0 0 5px rgba(255, 0, 0, .5),
+  0 0 20px rgba(255, 0, 0, .5),
+  0 0 40px rgba(255, 0, 0, .5),
+  0 0 80px rgba(255, 0, 0, .5);
+            
+}
+/*--------------------------------footer---------------*/
+.bodyfooter {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  min-height: 100vh;
+  background-color: hsl(256, 87%, 15%);
+}
+
+.footer {
+  position: relative;
+  width: 100%;
+  height: 10px;
+  background: #065b83;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 10px 5px;
+  flex-wrap: wrap;
+}
+
+.icon-elem {
+  list-style: none;
+}
+
+.icon {
+  color: white;
+  font-size: 32px;
+  display: inline-block;
+  margin: 0 10px;
+  transition: 0.5s;
+}
+
+.icon:hover {
+  transform: translateY(-10px);
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.menu-elem {
+  list-style: none;
+}
+.menu-icon {
+  color: white;
+  font-size: 20px;
+  display: inline-block;
+  text-decoration: none;
+  margin: 5px 10px;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+.menu-icon:hover {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.bodyRecomendaciones{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-image: linear-gradient(to bottom,hsl(256, 87%, 15%)  );
+}
